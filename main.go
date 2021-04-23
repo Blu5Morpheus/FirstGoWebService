@@ -2,8 +2,15 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Blu5Morpheus/FirstGoWebService/models"
 )
 
 func main() {
-	fmt.Println("Hello and Welcome")
-} 
+	u := models.User{
+		ID: 2,
+		FirstName: "Raven",
+		LastName: "Darkholme",
+	}
+	fmt.Println(u)
+}
